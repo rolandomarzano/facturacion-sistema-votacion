@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Votación</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Formulario de Votación</h1>
+      <form id="votingForm">
+        <div class="form-input">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-input">
+          <label for="last_name">Apellido:</label>
+          <input type="text" id="last_name" name="last_name" required />
+        </div>
+        <div class="form-input">
+          <label for="alias">Alias:</label>
+          <input type="text" id="alias" name="alias" required />
+        </div>
+        <div class="form-input">
+          <label for="dni">DNI:</label>
+          <input type="text" id="dni" name="dni" maxlength="8" required />
+        </div>
+        <div class="form-input">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-input">
+          <label for="department">Departamento:</label>
+          <select id="department" name="department" required></select>
+        </div>
+        <div class="form-input">
+          <label for="district">Distrito:</label>
+          <select id="district" name="district" required></select>
+        </div>
+        <div class="form-input">
+          <label for="candidate">Candidato:</label>
+          <select id="candidate" name="candidate" required>
+            <option value="">Selecciona un candidato</option>
+          </select>
+        </div>
+        <div class="form-checkbox">
+          <label>¿Cómo se enteró de nosotros?</label>
+          <div class="checkbox-list">
+            <input
+              type="checkbox"
+              name="how_know_us[]"
+              value="Redes Sociales" />
+            <label for="Redes Sociales">Redes Sociales</label>
+            <input type="checkbox" name="how_know_us[]" value="TV" />
+            <label for="web">Web</label>
+            <input type="checkbox" name="how_know_us[]" value="Radio" />
+            <label for="Radio">Radio</label>
+            <input type="checkbox" name="how_know_us[]" value="Amigos" />
+            <label for="Amigos">Amigos</label>
+            <input type="checkbox" name="how_know_us[]" value="Otro" />
+            <label for="Otro">Otro</label>
+          </div>
+        </div>
+        <button type="submit">Votar</button>
+      </form>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
